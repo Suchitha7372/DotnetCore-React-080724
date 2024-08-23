@@ -20,5 +20,5 @@ print 'Transaction Successfull'
 commit transaction
 end
 end
-exec transferamount 100,200,50000
+exec transferamount 100,200,30000
 select * from accounts
