@@ -1,4 +1,5 @@
 ﻿using HandsOnAPIUsingEFCodeFirst.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace HandsOnAPIUsingEFCodeFirst.Repositories
 {
@@ -6,11 +7,20 @@ namespace HandsOnAPIUsingEFCodeFirst.Repositories
     {
         private readonly ECommContext _context;
 
+<<<<<<< Updated upstream
         public ProductRepository(ECommContext context)
+=======
+        public ProductRepository(ECommContext context)//dependency injection
+>>>>>>> Stashed changes
         {
             _context = context;
         }
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
         //public ProductRepository()
         //{
         //    _context = new ECommContext();

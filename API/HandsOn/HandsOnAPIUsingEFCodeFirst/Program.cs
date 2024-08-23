@@ -1,10 +1,13 @@
 
 using HandsOnAPIUsingEFCodeFirst.Entities;
 using HandsOnAPIUsingEFCodeFirst.Repositories;
+<<<<<<< Updated upstream
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+=======
+>>>>>>> Stashed changes
 
 namespace HandsOnAPIUsingEFCodeFirst
 {
@@ -15,11 +18,20 @@ namespace HandsOnAPIUsingEFCodeFirst
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+<<<<<<< Updated upstream
             builder.Services.AddDbContext<ECommContext>(); //Register ECommContext class to DIC
             builder.Services.AddTransient<IProductRepository, ProductRepository>();
             builder.Services.AddTransient<IOrderRepository, OrderRepository>();
             builder.Services.AddTransient<IUserRepository, UserRepository>();
             builder.Services.AddTransient<IProuctAsyncRepository, ProuctAsyncRepository>();
+=======
+            builder.Services.AddDbContext<ECommContext>();//Register EcommContetxt class to DIC
+            builder.Services.AddTransient<IProductRepository,ProductRepository>();  
+            builder.Services.AddTransient<IOrderRepository,OrderRepository>();
+            builder.Services.AddTransient<IUserRepository,UserRepository>();
+
+
+>>>>>>> Stashed changes
             builder.Services.AddControllers();
             //Configure JWT to valie token data
             #region TokenValidationCode

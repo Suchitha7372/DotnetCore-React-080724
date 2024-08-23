@@ -17,12 +17,19 @@ namespace HandsOnAPIUsingEFCodeFirst.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserRepository _userRepository;
+<<<<<<< Updated upstream
         private IConfiguration _configuration;
       
         public UserController(IUserRepository userRepository, IConfiguration configuration)
         {
             _userRepository = userRepository;
             _configuration = configuration;
+=======
+
+        public UserController(IUserRepository userRepository)
+        {
+            _userRepository = userRepository;
+>>>>>>> Stashed changes
         }
 
         //public UserController()
